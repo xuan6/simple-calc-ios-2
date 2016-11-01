@@ -12,7 +12,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
+    open var resultList : [Double] = []
     var elements : [String] = []
     var numbers : [Double] = []
     var op : String = ""
@@ -279,6 +279,8 @@ class ViewController: UIViewController {
         }else{
             resultLabel.text = "ERROR"
         }
+        
+        resultList.insert(result, at: 0)
         
         numbers = []
         result = 0
