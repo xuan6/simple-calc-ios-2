@@ -388,7 +388,13 @@
                             <outlet property="delegate" destination="jg3-si-tZq" id="duB-5t-uLC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="History" id="SXq-M0-7yj"/>
+                    <navigationItem key="navigationItem" title="History" id="SXq-M0-7yj">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="wx2-KI-Xur">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="show" id="shA-uF-Zl0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hu6-Be-FSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
