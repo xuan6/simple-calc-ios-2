@@ -10,9 +10,11 @@ import UIKit
 
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController  {
     
-    open var resultList : [Double] = []
+    var resultList : [Double] = []
+    // textCellIdentifier = "LabelCell"
+    
     var elements : [String] = []
     var numbers : [Double] = []
     var op : String = ""
@@ -291,9 +293,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+       
     }
 
+    
 
 
 }
