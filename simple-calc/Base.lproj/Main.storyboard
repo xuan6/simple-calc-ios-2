@@ -258,7 +258,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="History"/>
                                 <connections>
-                                    <segue destination="jg3-si-tZq" kind="show" id="1AC-fu-W5W"/>
+                                    <segue destination="5BJ-BP-x2M" kind="show" id="1AC-fu-W5W"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -365,7 +365,7 @@
             </objects>
             <point key="canvasLocation" x="132" y="344.97751124437787"/>
         </scene>
-        <!--Table View Controller-->
+        <!--History-->
         <scene sceneID="cyi-c1-oJy">
             <objects>
                 <tableViewController id="jg3-si-tZq" sceneMemberID="viewController">
@@ -375,7 +375,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LabelCell" id="yBl-qz-gcZ">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yBl-qz-gcZ" id="pir-5m-ACK">
                                     <frame key="frameInset" width="375" height="43"/>
@@ -388,10 +388,29 @@
                             <outlet property="delegate" destination="jg3-si-tZq" id="duB-5t-uLC"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="History" id="SXq-M0-7yj"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hu6-Be-FSL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5489" y="386"/>
+            <point key="canvasLocation" x="6428" y="385.45727136431788"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Edu-dd-lVv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5BJ-BP-x2M" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KjV-6M-MTS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jg3-si-tZq" kind="relationship" relationship="rootViewController" id="d8a-TV-A04"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqY-ok-DvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5488.8000000000002" y="385.45727136431788"/>
         </scene>
     </scenes>
 </document>

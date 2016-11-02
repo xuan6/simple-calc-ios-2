@@ -12,7 +12,7 @@ import UIKit
 
 class ViewController: UIViewController  {
     
-    var resultList : [Double] = []
+    open var resultList : [Double] = []
     // textCellIdentifier = "LabelCell"
     
     var elements : [String] = []
