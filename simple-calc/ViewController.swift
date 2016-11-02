@@ -10,16 +10,17 @@ import UIKit
 
 
 
-class ViewController: UIViewController  {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
     
-    open var resultList : [Double] = []
-    // textCellIdentifier = "LabelCell"
+    var resultList : [Double] = []
+    let labelCellIdentifier = "LabelCell"
     
     var elements : [String] = []
     var numbers : [Double] = []
     var op : String = ""
     var result : Double = 0
     var countDot = 0
+    
     
     /*func dotEvaluate (elements:[String]) {
         for i in elements {
@@ -288,6 +289,24 @@ class ViewController: UIViewController  {
         result = 0
         elements = []
         
+    }
+    
+     func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return resultList.count
+    }
+    
+     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: labelCellIdentifier, for: indexPath)
+        
+        cell.textLabel?.text = String(resultList[indexPath.row])
+        
+        
+        return cell
     }
     
     
