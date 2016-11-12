@@ -10,9 +10,9 @@ import UIKit
 
 
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource  {
+class ViewController: UIViewController  {
     
-    var resultList : [Double] = []
+    //public var resultList = ResultList.results
     let labelCellIdentifier = "LabelCell"
     
     var elements : [String] = []
@@ -283,39 +283,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             resultLabel.text = "ERROR"
         }
         
-        resultList.insert(result, at: 0)
+        ResultList.results.insert(result, at:0)
+        //resultList.insert(result, at: 0)
+        
+        
+        
+        //resultList.insert(Result(number:result), at:0)
         
         numbers = []
         result = 0
         elements = []
         
     }
-    
-     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
-    
-     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return resultList.count
-    }
-    
-     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCell(withIdentifier: labelCellIdentifier, for: indexPath)
-        
-        cell.textLabel?.text = String(resultList[indexPath.row])
-        
-        
-        return cell
-    }
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-       
-    }
-
     
 
 

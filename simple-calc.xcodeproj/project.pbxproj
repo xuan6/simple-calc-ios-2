@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B63832591DD7764100C35EDA /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63832581DD7764000C35EDA /* TableViewController.swift */; };
+		B638325B1DD77A3F00C35EDA /* ResultList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B638325A1DD77A3F00C35EDA /* ResultList.swift */; };
 		B64339771DBD3088008D73A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64339761DBD3088008D73A8 /* AppDelegate.swift */; };
 		B64339791DBD3088008D73A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64339781DBD3088008D73A8 /* ViewController.swift */; };
 		B643397C1DBD3088008D73A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B643397A1DBD3088008D73A8 /* Main.storyboard */; };
@@ -14,7 +16,6 @@
 		B64339811DBD3088008D73A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B643397F1DBD3088008D73A8 /* LaunchScreen.storyboard */; };
 		B643398C1DBD3088008D73A8 /* simple_calcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B643398B1DBD3088008D73A8 /* simple_calcTests.swift */; };
 		B64339971DBD3088008D73A8 /* simple_calcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64339961DBD3088008D73A8 /* simple_calcUITests.swift */; };
-		B6EFB7AA1DC94FA300FEA9C9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EFB7A91DC94FA300FEA9C9 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B63832581DD7764000C35EDA /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B638325A1DD77A3F00C35EDA /* ResultList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultList.swift; sourceTree = "<group>"; };
 		B64339731DBD3088008D73A8 /* simple-calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple-calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64339761DBD3088008D73A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B64339781DBD3088008D73A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		B64339921DBD3088008D73A8 /* simple-calcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "simple-calcUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B64339961DBD3088008D73A8 /* simple_calcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simple_calcUITests.swift; sourceTree = "<group>"; };
 		B64339981DBD3088008D73A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B6EFB7A91DC94FA300FEA9C9 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				B64339761DBD3088008D73A8 /* AppDelegate.swift */,
 				B64339781DBD3088008D73A8 /* ViewController.swift */,
+				B638325A1DD77A3F00C35EDA /* ResultList.swift */,
 				B643397A1DBD3088008D73A8 /* Main.storyboard */,
+				B63832581DD7764000C35EDA /* TableViewController.swift */,
 				B643397D1DBD3088008D73A8 /* Assets.xcassets */,
 				B643397F1DBD3088008D73A8 /* LaunchScreen.storyboard */,
 				B64339821DBD3088008D73A8 /* Info.plist */,
-				B6EFB7A91DC94FA300FEA9C9 /* TableViewController.swift */,
 			);
 			path = "simple-calc";
 			sourceTree = "<group>";
@@ -266,7 +269,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64339791DBD3088008D73A8 /* ViewController.swift in Sources */,
-				B6EFB7AA1DC94FA300FEA9C9 /* TableViewController.swift in Sources */,
+				B63832591DD7764100C35EDA /* TableViewController.swift in Sources */,
+				B638325B1DD77A3F00C35EDA /* ResultList.swift in Sources */,
 				B64339771DBD3088008D73A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
